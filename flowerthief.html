@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ento parfum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="/css/stylesheet.css" rel="stylesheet">
+   </head> 
+   <body>
+    <header>
+        <a href="/scripts/home.html"><h1>ento</h1></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/scripts/home.html">home</a></li>
+                <li><a href="/scripts/products.html">shop</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="cart-icon">
+                <a href="/scripts/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <span id="cart-count">2</span> <!-- Number of items in the cart -->
+            </div>
+        </nav>
+    </header>
+    <section class="product-container">
+        <div class="product-image">
+            <img src="/images/perfumebottle.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h2 class="product-title">Flower Thief</h2>
+            <p class="product-description">
+                VOLUPTUOUS / GREEN / 
+
+A natural bug spray of lemon peel and neroli fail to deter the thirst of this maternal mosquito. Heat is released from the fervent scratching and metallic blood notes are coming to the surface. Musky skin cells fall to the oakmoss covered forest floor.
+
+Inspiration - mosquito 
+
+Eau de parfum, 50ml 1.7 floz - Natural spray. 
+
+Nose: A. Wilson, M. Rieg
+            </p>
+            <p class="product-price">$65.00</p>
+            <div class="product-actions">
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" value="1" min="1" max="10">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <article class="newsletter">
+        <p>subscribe to our newsletter</p>
+        <input type="text">
+        <input type="submit">
+        </article>
+        <article class="footer-links">
+            <a href="">Press</a><br>
+            <a href="">Shipping</a><br>
+            <a href="">Terms & Conditions</a><br>
+            <a href="">Stockists</a><br>
+            <a href="">Privacy Notice</a><br>
+            <a href="">Contact</a>
+        </article>
+        <p>&copy; 2024 entoparfum. All rights reserved.</p>
+    </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+   </body>
+</html>
